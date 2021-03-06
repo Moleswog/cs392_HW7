@@ -2,7 +2,7 @@ def run(x):
     i = 0
     while(i < x):
         i+=1
-        print(i)
+        PrintFunc(i)
     return i
 
 def PrintFunc(x):
@@ -19,3 +19,5 @@ def PrintFunc(x):
 
         print(out)
         return out
+
+run(100)
