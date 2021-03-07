@@ -25,6 +25,22 @@ class HW7Test(unittest.TestCase):
 
         results = q2.by400(410)
         self.assertEqual(results, False)
+
+    def test_leapYear(self):
+        # test to see if input is a leap year
+        results = q2.leapYear(8)
+        self.assertEqual(results, True)
+
+        results = q2.leapYear(100)
+        self.assertEqual(results, False)
+
+        results = q2.leapYear(400)
+        self.assertEqual(results, True)
+
+        results = q2.leapYear(2000)
+        self.assertEqual(results, True)
+
+        
         
 
 if __name__ == "__main__":
