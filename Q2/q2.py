@@ -10,4 +10,10 @@ def by100(x):
     else:
         return False
 
+def by400(x):
+    if(x % 400 == 0):
+        return True
+    else:
+        return False
+
 
