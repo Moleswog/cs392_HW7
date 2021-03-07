@@ -16,4 +16,12 @@ def by400(x):
     else:
         return False
 
+def leapYear(x):
+    if(by400(x) or (by4(x) and (by100(x) == False))):
+        print(x, "is a leap year")
+        return True
+    else:
+        print(x, "is not a leap year")
+        return False
+
 
