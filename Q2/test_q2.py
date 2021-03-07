@@ -10,14 +10,21 @@ class HW7Test(unittest.TestCase):
         results = q2.by4(5)
         self.assertEqual(results, False)
 
-    def test_divisibleBy4(self):
+    def test_divisibleBy100(self):
         # test to see if integer input it divisible by 100
         results = q2.by100(100)
         self.assertEqual(results, True)
 
         results = q2.by100(110)
         self.assertEqual(results, False)
-        
+
+    def test_divisibleBy400(self):
+        # test to see if integer input it divisible by 400
+        results = q2.by400(400)
+        self.assertEqual(results, True)
+
+        results = q2.by400(410)
+        self.assertEqual(results, False)
         
 
 if __name__ == "__main__":
